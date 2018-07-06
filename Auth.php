@@ -189,6 +189,8 @@ public function userinfo()
  {
 
 
+	    $this->load->view('templates/layout_hrms');
+           	    $this->load->view('sidebar');
 	$result['data']=$this->Auth_model->displayrecordsbyname($this->session->userdata('username'));
 
   		$this->load->view("userinfo",$result);
